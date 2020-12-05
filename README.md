@@ -5,11 +5,11 @@ Acest repository reprezinta solutia mea la problema enuntata mai jos.
 Pentru a crea un sistem flexibil care sa permita cu usurinta adaugarea de noi skilluri am folosit Observer pattern prin  
 intermediul componentei Symfony/EventDispatcher.  
 
-Skill-urile se declanseaza in momente cheie ale jocului. In acest moment sunt doar doua evenimente generate de componenta  
-EventDispatcher:  play_attack.after respectiv damage.computed  
+Skill-urile se declanseaza in momente cheie ale jocului, pentru a raspunde cerintelor problemei am adaugat 2 evenimente:  play_attack.after respectiv damage.computed  
 - play_attack.after  - este un eveniment care se declanseaza dupa terminarea unui atac  
 - damage.computed  - este un eveniment care se declanseaza dupa ce damage-ul a fost calculat  
 
+Alte evenimente pot fi adaugate, de exemplu "play_attack.before".  
 
 Skill-urile sunt de doua tipuri: atac/defensiva pentru a fi executate de jucator in functie de situatia in care se afla  
 in acel moment al jocului (in atac sau in defensiva).  
