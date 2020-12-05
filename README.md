@@ -71,6 +71,7 @@ There's no time limit, take your time for the best approach you can think of.
 
 
 # Rulare aplicatie
+Nota: rulati "composer install" pentru a instala dependintele inainte de a putea rula aplicatia.  
 Exemplu rulare joc:   
 
 $ cd /path_to_files/src  
